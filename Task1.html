@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Back-End Task -1</title>
+   
+    <script type="text/javascript">
+
+        function write_integer(){
+
+            var num = document.getElementById("num").value,
+                    str1  = document.getElementById("str1").value,
+                    str2 = document.getElementById("str2").value,
+                    str3 = document.getElementById("str3").value,
+                    result = Math.pow(num, 2);
+
+            console.log("\n Output \n " + result + "\n" + str1+result + "\n" + str2+result +"\n" + str3+result);
+
+            document.getElementById("output").style.visibility = "visible";
+
+            document.getElementById('number').innerHTML = num+result;
+            document.getElementById('first_string').innerHTML = str1+result;
+            document.getElementById('second_string').innerHTML = str2+result;
+            document.getElementById('third_string').innerHTML = str3+result;
+
+        }
+
+    </script>
+</head>
+<body>
+
+<form>
+    First_Integer: <input type="text" id="num"/></br><br>
+
+    Second_String: <input type="text" id="str1"/></br><br>
+
+    Third_String: <input type="text" id="str2"/></br><br>
+
+    Fourth_String: <input type="text" id="str3"/></br><br>
+
+    <input type="button" value="done" onclick="write_integer();"/>
+</form>
+
+<p id ="output" style="visibility: hidden"> <b> Output </b> </p>
+<p><b id = "number"></b></p>
+<p><b id = "first_string"></b></p>
+<p><b id = "second_string"></b></p>
+<p><b id = "third_string"></b></p>
+
+</body>
+</html>
+
+
+
+
+
